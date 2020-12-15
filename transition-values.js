@@ -1,7 +1,7 @@
 var CreateTransition = function (min, max, steps, usedecimal) {
   var rarr = [ ];
   for (i = 0; ; i++) {
-    var ic = min + (i * (max - min) / steps);
+    var ic = min + (i * (max - min) / (steps - 1)); // this is to avoid confusion
     if (!usedecimal) ic = Math.floor(ic);
     if (ic > max) break;
     rarr[i] = ic;
@@ -12,7 +12,7 @@ var CreateTransition = function (min, max, steps, usedecimal) {
 var AdvancedCreateTransition = function (min, max, steps, decimalhandling) {
   var rarr = [ ];
   for (i = 0; ; i++) {
-    var ic = min + (i * (max - min) / steps);
+    var ic = min + (i * (max - min) / (steps - 1));
     if (decimalhandling == 1 || decimalhandling == "floor" || decimalhandling == "f") {
       ic = Math.floor(ic);
     }
