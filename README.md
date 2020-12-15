@@ -16,9 +16,10 @@ It's fairly new and might not be easy to understand for some people, and there m
 In HTML:
 ```html
 <head>
-  <script src=""></script>
+  <script src="https://raw.githubusercontent.com/KaanGaming/transition-values/main/transition-values.js"></script>
 </head>
 ```
+(verify code if it works)
 
 ## Reference
 `CreateTransition(min, max, steps, usedecimal)`
