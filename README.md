@@ -33,6 +33,7 @@ Example:
 console.log(CreateTransition(0, 10, 10, true));
 /*
 returns Array:
+0
 1
 2
 3
@@ -63,18 +64,19 @@ Arguments:
 
 Example:
 ```js
-console.log(AdvancedCreateTransition(0, 10, 10, 2);
+console.log(AdvancedCreateTransition(0, 5, 10, 2);
 /*
 returns Array:
+0
+1
 1
 2
+2
+3
 3
 4
+4
 5
-6
-7
-8
-9
-10
+5
 */
 ```
