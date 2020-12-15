@@ -2,7 +2,7 @@ var CreateTransition = function (min, max, steps, usedecimal) {
   var rarr = [ ];
   for (i = 0; ; i++) {
     var ic = min + (i * (max - min) / steps);
-    if (usedecimal) ic = Math.floor(ic);
+    if (!usedecimal) ic = Math.floor(ic);
     if (ic > max) break;
     rarr[i] = ic;
   }
