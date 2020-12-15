@@ -30,7 +30,7 @@ Arguments:
 
 Example:
 ```js
-CreateTransition(1, 10, 10, true);
+console.log(CreateTransition(0, 10, 10, true));
 /*
 returns Array:
 1
@@ -63,7 +63,7 @@ Arguments:
 
 Example:
 ```js
-CreateTransition(1, 10, 10, true);
+console.log(AdvancedCreateTransition(0, 10, 10, 2);
 /*
 returns Array:
 1
