@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages
+# Transition Values
+Simple library for JavaScript that allows users to translate between values step by step
 
-You can use the [editor on GitHub](https://github.com/KaanGaming/transition-values/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+###### [Visit GitHub repo](https://github.com/KaanGaming/transition-values)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Table of Content
+* [Information](#information)
+* [Implementation](#implementation)
+* [Reference](#reference)
 
-### Markdown
+---
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Information
+Transition Values is a simple library for JavaScript that lets people create an araay that contains a range of numbers in amount of steps you can specify
+It's fairly new and might not be easy to understand for some people, and there may be a few opportunities to clean up code.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## Implementation
+In HTML:
+```html
+<head>
+  <script src="https://raw.githubusercontent.com/KaanGaming/transition-values/main/transition-values.js"></script>
+</head>
 ```
+(verify code if it works)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Reference
+`CreateTransition(min, max, steps, usedecimal)`
+Alias: `createTrans`
+Returns: `array`
 
-### Jekyll Themes
+Function to create an array with range of values in steps.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KaanGaming/transition-values/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Arguments:
+* `min`: `number` type, used for minimum value
+* `max`: `number` type, used for maximum value
+* `steps`: `number` type, generally used to be proper target length
+* `usedecimal`: `boolean` type, if false it rolls the number with decimal point to make number integer
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Example:
+```js
+console.log(CreateTransition(0, 10, 10, true));
+/*
+returns Array:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+*/
+```
