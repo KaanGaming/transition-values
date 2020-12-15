@@ -13,7 +13,12 @@ Transition Values is a simple library for JavaScript that lets people create an 
 It's fairly new and might not be easy to understand for some people, and there may be a few opportunities to clean up code.
 
 ## Implementation
-TODO: Explain how to implement library to HTML
+In HTML:
+```html
+<head>
+  <script src=""></script>
+</head>
+```
 
 ## Reference
 `CreateTransition(min, max, steps, usedecimal)`
