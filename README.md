@@ -44,3 +44,37 @@ returns Array:
 9
 10
 */
+```
+
+---
+
+`AdvancedCreateTransition(min, max, steps, decimalhandling)`
+Alias: `createTrans_a`
+Returns: `array`
+
+Function to create an array with range of values in steps with various settings.
+You can choose to floor, round or ceil the number in 4th argument or anything else to do nothing about it.
+
+Arguments:
+* `min`: `number` type, used for minimum value
+* `max`: `number` type, used for maximum value
+* `steps`: `number` type, generally used to be proper target length
+* `decimalhandling`: `integer` or `string` type. `1`, `"f"` or `"floor"` "floor"s the number, `2`, `r` or `round` rounds the number to closest integer, and fjnally `3`, `c`, `ceil` ceils the number. Anything else can be used but it doesn't change the output so it leaves it as it was.
+
+Example:
+```js
+CreateTransition(1, 10, 10, true);
+/*
+returns Array:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+*/
+```
