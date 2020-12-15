@@ -3,8 +3,10 @@ var CreateTransition = function (min, max, steps, usedecimal) {
   for (i = 0; ; i++) {
     var ic = min + (i * (max - min) / steps);
     if (usedecimal) ic = Math.floor(ic);
+    if (ic > max) break;
     rarr[i] = ic;
   }
+  return rarr;
 }
 
 var AdvancedCreateTransition = function (min, max, steps, decimalhandling) {
@@ -20,8 +22,10 @@ var AdvancedCreateTransition = function (min, max, steps, decimalhandling) {
     else if (decimalhandling == 3 || decimalhandling == "ceil" || decimalhandling == "c") {
       ic = Math.ceil(ic);
     }
+    if (ic > max) break;
     rarr[i] = ic;
   }
+  return rarr;
 }
 
 // simple shortcuts!
