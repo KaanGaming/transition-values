@@ -29,4 +29,18 @@ Arguments:
 * `usedecimal`: `boolean` type, if false it rolls the number with decimal point to make number integer
 
 Example:
-`CreateTransition(1, 10, 9, true);
+```js
+CreateTransition(1, 10, 10, true);
+/*
+returns Array:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+*/
